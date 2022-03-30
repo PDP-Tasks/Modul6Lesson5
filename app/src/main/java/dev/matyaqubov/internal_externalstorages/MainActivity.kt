@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         loadPhotosFromExternalStorage()
         loadPhotosFromInternalStorage()
-//        createInternalFile()
+        createInternalFile()
         findViewById<Button>(R.id.b_save_internal).setOnClickListener {
             saveInternalFile("PDP da o'qish yaxshi ekanuuuuu lekin .....")
         }
