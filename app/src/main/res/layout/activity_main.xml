@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_internal"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Internal storage (Text)"/>
+
+            <Button
+                android:id="@+id/b_save_internal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Internal"/>
+            <Button
+                android:id="@+id/b_read_internal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Read Internal"/>
+
+
+            <TextView
+                android:id="@+id/tv_ext"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="External storage (Text)"/>
+
+            <Button
+                android:id="@+id/b_save_ext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save external"/>
+            <Button
+                android:id="@+id/b_read_ext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Read external"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_save_photo_in_ext_and_int"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Save photo in ext or int"/>
+
+            <Button
+                android:id="@+id/b_take_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="take photo"/>
+
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/b_del_ext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Del ext"/>
+
+            <Button
+                android:id="@+id/b_del_int"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Del int"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_int"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ext"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
